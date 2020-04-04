@@ -14,6 +14,7 @@
       <div class="row">
         <h1>Kelsey Pedersen</h1>
         <p>Loves tacos, traveling and visiting murals</p>
+        <h2>Who rocked the Nashville mural best, fall 2019?</h2>
       </div>
       <div class="row">
         <img id="imgBanner" src="kelsey.png" height="400px">
@@ -37,7 +38,7 @@
 </style>
 
 <script type="text/javascript">
-            var picPaths = ['kelsey.png','twitter.png','facebook.png'];
+            var picPaths = ['kelsey.png','taylor-swift.png'];
             var curPic = -1;
             //preload the images for smooth animation
             var imgO = new Array();
@@ -49,7 +50,7 @@
             function swapImage() {
                 curPic = (++curPic > picPaths.length-1)? 0 : curPic;
                 imgCont.src = imgO[curPic].src;
-                setTimeout(swapImage,2000);
+                setTimeout(swapImage,3000);
             }
 
             window.onload=function() {
