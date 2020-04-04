@@ -10,12 +10,25 @@
   </head>
 
   <body>
-    <div style="display: flex; justify-content: center">
-      <div style="max-width: 300px">
+    <div class="container">
+      <div class="row">
         <h1>Kelsey Pedersen</h1>
         <p>Loves tacos, traveling and visiting murals</p>
       </div>
-      <img src="kelsey.png" height="400px" style="padding: 30px">
+      <div class="row">
+        <img src="kelsey.png" height="400px" style="padding: 30px">
+      </div>
     </div>
   </body>
 </html>
+
+<style>
+  .container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  .row{
+    max-width: 400px;
+  }
+</style>
